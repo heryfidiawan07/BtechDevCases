@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-sans: "Source Sans 3", sans-serif;
+  --color-ink: #1c241c;
+  --color-paper: #f3efe4;
+  --color-moss: #2f5d3a;
+  --color-moss-dark: #21422b;
+  --color-terracotta: #b4532a;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(47, 93, 58, 0.08), transparent 28%),
+    linear-gradient(180deg, #f7f3ea 0%, #efe8d8 100%);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
